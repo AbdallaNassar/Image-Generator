@@ -1,0 +1,181 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.title span {
+  color: #de1b89;
+  font-weight: 700;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  background: rgba(22, 85, 99, 0.308);
+  margin-top: 20px;
+}
+.serchBox {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  background: rgba(22, 85, 99, 0.308);
+  margin-top: 20px;
+}
+.serchInput {
+  width: 350px;
+  margin: auto;
+  height: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: rgba(28, 2, 2, 0.821);
+  font-weight: 600;
+}
+.serchInput::placeholder {
+  color: rgba(27, 1, 1, 0.695);
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttonGen {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #de1b89;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.buttonGen:hover {
+  background-color: #ff4f9a;
+  scale: 1.1;
+  transition: all 0.5s;
+}
+
+.buttonDawnload {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #00b300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.buttonDawnload:hover {
+  background-color: #00b3008d;
+  scale: 1.1;
+  transition: all 0.5s;
+}
+
+.loadingBar {
+  width: 400px;
+  height: 4px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000000;
+  margin-top: 2px;
+}
+
+.loadingBarFill {
+  height: 100%;
+  background-color: #e7118a;
+  transition: width 0.5s ease-out;
+}
+
+/* New styles for the select dropdown */
+.modelSelect {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.modelDropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid rgba(22, 85, 99, 0.308);
+  background: rgba(22, 85, 99, 0.308);
+
+  border-radius: 50px;
+  color: rgba(28, 2, 2, 0.821);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modelDropdown:hover, .modelDropdown:focus {
+  border-color: #de1b89;
+}
+
+.modelDropdown option {
+  padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: 0px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+  }
+  .serchBox {
+    width: 300px;
+  }
+  .serchInput {
+    width: 250px;
+  }
+  .buttonContainer {
+    gap: 30px;
+  }
+  .buttonGen {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .buttonDawnload {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .loadingBar {
+    width: 300px;
+  }
+  .modelSelect {
+    width: 300px;
+  }
+}
