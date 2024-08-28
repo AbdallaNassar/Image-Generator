@@ -63,19 +63,19 @@ The main component that renders the user interface and manages the image generat
 ### useImageGenerator
 A custom React hook that encapsulates the logic for image generation, including:
 - API calls to Hugging Face
-- State management for loading, progress, and generated images
+- State management for loading, progress, and generating images
 - Image download functionality
 
 ## Styling
-The application uses CSS Modules for styling, with responsive design for both desktop and mobile views.
+The application uses CSS Modules for styling and responsive design for desktop and mobile views.
 
 ## API Integration
 The application integrates with the Hugging Face API to access various image generation models. The available models include:
-- Stable Diffusion XL
-- Stable Diffusion v1.5
-- Stable Diffusion v1.4
-- Midjourney-style
 - Dreamlike Diffusion
+- Stable Diffusion XL
+- Stable Diffusion V1.5
+- Midjourney-style
+- DFLUX.1 Schnell
 
 ## Future Improvements
 - Add user authentication
